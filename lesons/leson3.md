@@ -197,3 +197,33 @@ f.ages   #  => [10, 20, 27]
 
 
 zatial len tolko,
+
+tomyyy, ja som sa s tým babral a špekuloval až som konečne donútil ten program pracovať tak ako som chcel ja.. no vypadá takto: 
+
+class Friends
+  def initialize(name, age)
+    puts "Your friend's name and age:"
+    @name = name
+    @age = age
+  end
+  def his_name
+    name = gets
+    @name << name
+  end
+  def his_age
+    age = gets
+    @age << age
+  end
+  def display
+    full_name = @name.capitalize
+    puts "Your friend's names are #{full_name} and their ages are #{@age}"
+  end
+end
+
+g = Friends.new("","")
+
+3.times do
+  g.his_name
+  g.his_age
+end
+g.display
